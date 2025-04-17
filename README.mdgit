@@ -1,0 +1,1 @@
+"# evento-frontend"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/AxelSantander26/evento-frontend.gitgit push -u origin main
