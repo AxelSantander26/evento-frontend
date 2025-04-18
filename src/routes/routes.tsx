@@ -1,7 +1,6 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
 import PublicLayout from "../layouts/PublicLayout";
 import HomeComponent from "../pages/public/HomeComponent";
-import AboutComponent from "../pages/public/AboutComponent";
 import Services from "../pages/Services";
 import FetchService from "../pages/FetchService";
 
@@ -20,7 +19,6 @@ const router = createBrowserRouter(
             {/* Layout Publico */}
             <Route path="/" element={<PublicLayout />}>
                 <Route index element={<HomeComponent />} />
-                <Route path="about" element={<AboutComponent />} />
                 <Route path="services" element={<Services />}>
                     <Route path="fetch" element={<FetchService />} />
                 </Route>

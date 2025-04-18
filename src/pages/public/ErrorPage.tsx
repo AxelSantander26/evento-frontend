@@ -1,5 +1,5 @@
 import { FC } from "react";
-import errorImage from "../../assets/necoArcError.svg";
+import errorImage from "/necoArcError.svg";
 
 const ErrorPage: FC = () => {
     return (

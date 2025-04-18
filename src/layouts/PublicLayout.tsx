@@ -6,9 +6,10 @@ const PublicInfoComponent: FC = () => {
     return (
         <div>
             <PublicMenu />
-            <div className="container mt-4">
+            <div className="container-fluid mt-4 px-0">
                 <Outlet />
             </div>
+
         </div>
     );
 };

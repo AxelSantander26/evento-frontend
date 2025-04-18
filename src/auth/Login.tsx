@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { FaArrowLeft } from 'react-icons/fa';
 /** Imágenes */
-import LoginImg from '../assets/necoArcBase.svg';
+import LoginImg from '/necoArcBase.svg';
 
 interface LoginProps {
     onLogin: (username: string, password: string) => void;
