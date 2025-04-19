@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Home, Building2, Users, CalendarDays, User as UserIcon } from 'lucide-react'; // Iconos modernos de lucide-react
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import logo from "/logo.png";
 const AdminSidebar = () => {
     return (
         <div className="d-flex flex-column justify-content-between vh-100 shadow-sm admin-sidebar">
@@ -9,7 +10,7 @@ const AdminSidebar = () => {
                 {/* Logo y Nombre de usuario */}
                 <div className="p-4 text-center">
                     <Link to="/admin" className="navbar-brand d-flex flex-column align-items-center">
-                        <img src="/logo.png" alt="Logo" style={{ height: "40px", marginBottom: "5px" }} />
+                        <img src={logo} alt="Logo" style={{ height: "40px", marginBottom: "5px" }} />
                     </Link>
                 </div>
 

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
+import logo from "/logo.png";
 import { FC } from "react";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ const PublicNavbar: FC = () => {
             <div className="container">
                 <Link className="navbar-brand d-flex align-items-center" to="/">
                     <img
-                        src="/logo.png"
+                        src={logo}
                         alt="Logo"
                         style={{ height: '40px', marginRight: '10px' }}
                     />
