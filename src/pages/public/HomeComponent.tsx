@@ -3,8 +3,8 @@ import { FC } from "react";
 const HomeComponent: FC = () => {
     return (
         <>
-            {/* banner luego lo cambio  */}
-            <section id="inicio" style={{ overflow: "hidden" }}>
+            {/* banner luego lo cambio */}
+            <section id="inicio" className="pt-navbar" style={{ overflow: "hidden" }}>
                 <img
                     src="https://picsum.photos/1920/700?random=1"
                     alt="Banner de evento"
@@ -131,6 +131,13 @@ const HomeComponent: FC = () => {
                     </div>
                 </div>
             </section>
+
+            {/* Estilo para compensar el navbar fijo */}
+            <style>{`
+                .pt-navbar {
+                    padding-top: 30px; /* Altura del navbar */
+                }
+            `}</style>
         </>
     );
 };

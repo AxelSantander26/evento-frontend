@@ -1,16 +1,16 @@
-import { FC } from "react";
 import { Outlet } from "react-router-dom";
-import PublicMenu from "../components/menus/PublicMenu";
+import AdminSidebar from "../components/menus/AdminSidebar";
 
-const AdminPanelComponent: FC = () => {
+const AdminLayout = () => {
     return (
-        <div>
-            <PublicMenu />
-            <div className="container mt-4">
+        <div className="d-flex" style={{ minHeight: "100vh" }}>
+            <AdminSidebar />
+            <div className="container-fluid px-0">
                 <Outlet />
             </div>
+
         </div>
     );
 };
 
-export default AdminPanelComponent;
+export default AdminLayout;

@@ -9,6 +9,9 @@ import Login from "../auth/Login";
 import Register from "../auth/Register";
 import AuthLayout from "../auth/AuthLayout";
 import ErrorPage from "../pages/public/ErrorPage";
+import ClientLayout from "../layouts/ClientLayout";
+import AdminLayout from "../layouts/AdminLayout";
+import PaginaRelleno from "../pages/public/PaginaRelleno";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -35,9 +38,16 @@ const router = createBrowserRouter(
                     element={<Register onRegister={(u, e, p) => console.log("Register:", u, e, p)} />}
                 />
             </Route>
+
             {/* Layout Cliente */}
+            <Route path="/cliente" element={<ClientLayout />}>
+                <Route index element={<PaginaRelleno />} />
+            </Route>
 
             {/* Layout Admin */}
+            <Route path="/admin" element={<AdminLayout />}>
+                <Route index element={<PaginaRelleno />} />
+            </Route>
         </>
     )
 );

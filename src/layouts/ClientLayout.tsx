@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Outlet } from "react-router-dom";
-import PublicMenu from "../components/menus/PublicMenu";
+import PublicMenu from "../components/menus/PublicNavbar";
 
 const ClientPanelComponent: FC = () => {
     return (

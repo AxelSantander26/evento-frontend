@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { FC } from "react";
 import { Link } from "react-router-dom";
 
-const PublicMenu: FC = () => {
+const PublicNavbar: FC = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-white shadow fixed-top custom-font">
             <div className="container">
@@ -59,7 +59,6 @@ const PublicMenu: FC = () => {
             {/* Custom Styles */}
             <style>
                 {`
-                    /* Importing the Poppins font */
                     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
                     .custom-font {
@@ -80,16 +79,18 @@ const PublicMenu: FC = () => {
 
                     .custom-btn {
                         background: linear-gradient(to bottom, #155090, #103359);
-                        color: white;
+                        color: white !important;
                         border: none;
-                        padding: 0.3rem 1rem; /* Ajuste del padding */
+                        padding: 0.3rem 1rem;
                         font-size: 0.875rem;
                         font-weight: 500;
                         border-radius: 0;
+                        text-decoration: none;
                     }
 
                     .custom-btn:hover {
                         opacity: 0.9;
+                        color: white !important; /* ← Mantenemos el texto blanco en hover */
                     }
 
                     .custom-vr {
@@ -103,4 +104,4 @@ const PublicMenu: FC = () => {
     );
 };
 
-export default PublicMenu;
+export default PublicNavbar;

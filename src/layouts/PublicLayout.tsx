@@ -1,12 +1,12 @@
 import { FC } from "react";
 import { Outlet } from "react-router-dom";
-import PublicMenu from "../components/menus/PublicMenu";
+import PublicNavbar from "../components/menus/PublicNavbar";
 
 const PublicInfoComponent: FC = () => {
     return (
         <div>
-            <PublicMenu />
-            <div className="container-fluid mt-4 px-0">
+            <PublicNavbar />
+            <div className="container-fluid px-0">
                 <Outlet />
             </div>
 
