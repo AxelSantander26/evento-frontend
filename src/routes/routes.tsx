@@ -49,7 +49,10 @@ const router = createBrowserRouter(
                 <Route index element={<PaginaRelleno />} />
             </Route>
         </>
-    )
+    ),
+    {
+        basename: "/evento-frontend",
+    }
 );
 
 export default router;
