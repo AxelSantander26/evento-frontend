@@ -4,9 +4,9 @@ import { Link, useNavigate } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { FaArrowLeft } from 'react-icons/fa';
-/** Imágenes */
-import LoginImg from '/necoArcBase.svg';
-
+/** Imágenes
+import LoginImg from '/necoArcBase.png';
+ */
 interface LoginProps {
     onLogin: (username: string, password: string) => void;
 }
@@ -76,7 +76,7 @@ const Login: FC<LoginProps> = ({ onLogin }) => {
                     {/* Logo debajo del título */}
                     <div className="text-center mb-4">
                         <img
-                            src={LoginImg}
+                            src="necoArcBase.png"
                             alt="Logo"
                             style={{ width: '120px', height: 'auto' }}
                         />

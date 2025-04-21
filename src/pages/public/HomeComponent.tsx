@@ -1,19 +1,21 @@
 import { FC } from "react";
 
+import banner from "/banner.jpg";
+import local from "/local.jpg";
 const HomeComponent: FC = () => {
     return (
         <>
             {/* banner luego lo cambio */}
             <section id="inicio" className="pt-navbar" style={{ overflow: "hidden" }}>
                 <img
-                    src="https://picsum.photos/1920/700?random=1"
+                    src={banner}
                     alt="Banner de evento"
                     className="w-100"
                     style={{
                         objectFit: "cover",
                         height: "auto",
                         display: "block",
-                        maxHeight: "700px",
+                        maxHeight: "520px",
                     }}
                 />
             </section>
@@ -29,18 +31,18 @@ const HomeComponent: FC = () => {
                         Nuestros Locales
                     </h2>
                     <div className="row g-4">
-                        {["Miraflores", "San Isidro", "La Molina"].map((local, i) => (
-                            <div className="col-md-4" key={local}>
+                        {["Miraflores", "San Isidro", "La Molina"].map((nombre, i) => (
+                            <div className="col-md-4" key={i}>
                                 <div className="card h-100 shadow-lg border-0 rounded-3">
                                     <img
-                                        src={`https://picsum.photos/400/250?random=${i + 2}`}
+                                        src={local}
                                         className="card-img-top rounded-3"
-                                        alt={`Local en ${local}`}
+                                        alt={`Local en ${nombre}`}
                                         style={{ objectFit: "cover", height: "250px" }}
                                     />
                                     <div className="card-body">
                                         <h5 className="card-title" style={{ color: "#343a40" }}>
-                                            {local}
+                                            {nombre}
                                         </h5>
                                         <p className="card-text">
                                             Espacio moderno y versátil para eventos sociales y corporativos. Capacidad hasta 200 personas.
@@ -52,6 +54,7 @@ const HomeComponent: FC = () => {
                     </div>
                 </div>
             </section>
+
 
             {/* Precios */}
             <section

@@ -1,5 +1,6 @@
 import { FC } from "react";
-import errorImage from "/necoArcError.svg";
+/**
+import errorImage from "/necoArcError.png";*/
 
 const ErrorPage: FC = () => {
     return (
@@ -9,7 +10,7 @@ const ErrorPage: FC = () => {
         >
             <div className="text-center mb-4">
                 <img
-                    src={errorImage}
+                    src="necoArcError.png"
                     alt="Logo"
                     style={{ width: '200px', height: 'auto' }}
                 />
